@@ -14,9 +14,9 @@ export default function Model({ ...props }) {
   const group = useRef()
   const { nodes, materials, animations } = useGLTF('/scene.gltf')
   const { actions } = useAnimations(animations, group)
-  useEffect(() =>{
-    actions.Scene.play()
-  })
+  //useEffect(() =>{
+   // actions.Scene.play()
+  //})
   return (
     <group ref={group} {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
