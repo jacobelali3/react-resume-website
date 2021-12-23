@@ -54,7 +54,7 @@ function App() {
         </nav>
       </div>
 
-      <div className="lg:w-3/4   my-8 container bg-gradient-to-r from-black to-blue-300  px-6 bg-opacity-50 flex items-center  rounded-tr-full rounded-br-full overflow-hidden  ">
+      <div className="lg:w-screen   my-8 container bg-gradient-to-r from-black to-blue-300  px-6 bg-opacity-50 flex items-center  rounded-tr-full rounded-br-full overflow-hidden  ">
         <div className="max-w-xl">
           <div className="text-6xl">
             <h2 className=" text-white font-semibold text-center pt-2">
@@ -81,10 +81,10 @@ function App() {
         </div>
       </div>
 
-      <div>
-        <div className="block float-left mt-6 py-6 px-4 text-black text-2xl lg:w-1/2 lg:h-1/4 sm:w-screen sm:h-fit">
-          <h2 className="float-left text-2xl text-left font-bold">About Me</h2>
-          <p className="  font-sans mt-6 float-left">
+      <div className="flex">
+        <div className="lg:ml-20   mt-2  px-4 text-black  lg:w-1/2 lg:h-1/4 sm:w-screen sm:h-fit">
+          <h2 className=" text-4xl text-left font-bold">About Me</h2>
+          <p className=" text-2xl font-sans mt-6 ">
             I am a junior software engineer based in Sydney, Australia. My
             passion lies within web development and I love to explore the latest
             cutting edge technology! My most recent experience has been as a
@@ -93,30 +93,89 @@ function App() {
             building real, genuine relationships with people.
           </p>
         </div>
-        <div className="block left-40 w-96 h-96 float-right lg:mr-48 lg:mt-20">
-          <Canvas camera={{ pov: 70, position: [2.5, 2.5, 6.8] }}>
-            <OrbitControls
-              enablePan={true}
-              enableZoom={true}
-              enableRotate={true}
-            />
-            <ambientLight intensity={1} />
-            <directionalLight />
+      </div>
+      <div className="flex lg:ml-48 w-96 mt-8 h-96  ">
+        <Canvas camera={{ pov: 100, position: [3, 3, 7] }}>
+          <OrbitControls
+            enablePan={true}
+            enableZoom={true}
+            enableRotate={true}
+          />
+          <ambientLight intensity={1} />
+          <directionalLight />
 
-            <Suspense fallback={null}>
-              <Scene />
-            </Suspense>
-          </Canvas>
+          <Suspense fallback={null}>
+            <Scene />
+          </Suspense>
+        </Canvas>
+      </div>
+      <div className="flex top-48">
+        <div className="lg:ml-20  float-left   px-4 text-black  lg:w-1/2 lg:h-1/4 sm:w-screen sm:h-fit">
+          <h2 className="text-4xl text-left font-bold">Academia</h2>
+          <img
+            className="place-items-center w-32 float-right"
+            src="utslogo.jpg"
+            alt="utslogo"
+          ></img>
+          <p className="text-2xl mt-6">
+            <b>Course: </b>Bachelor of Engineering (Honours) <br></br>{" "}
+            <b>Major: </b>Software Engineering
+            <br></br>
+            <b> Sub-Major: </b>Real-time Systems <br></br> January 2017 – June
+            2022 (expected)
+            <br></br>
+            <b> University: </b>University of Technology Sydney <br></br>{" "}
+            <b>WAM:</b> 74
+          </p>
         </div>
       </div>
-      <div className="relative float-right right mt-6 py-6 px-4 text-black text-2xl lg:w-1/2 lg:h-1/4 sm:w-screen sm:h-fit">
-        <h2 className="font-bold">Academia</h2>
-        <p>
-          <b>Course: </b>Bachelor of Engineering (Honours) <br></br> <b>Major: </b>Software Engineering
-          <br></br><b> Sub-Major: </b>Real-time Systems <br></br> January 2017 – June 2022 (expected)
-          <br></br><b> University: </b>University of Technology Sydney <br></br> WAM: 74
-        </p>
-        <img className= "float-right w-64 inline-block" src="utslogo.jpg" alt="utslogo" ></img>
+      <div className="flex mt-16">
+        <div className="lg:ml-20  float-left   px-4 text-black text-2xl lg:w-1/2 lg:h-1/4 sm:w-screen sm:h-fit">
+          <h2 className="text-4xl text-left font-bold">Projects</h2>
+          <a href="https://github.com/jacobelali3/react-resume-website" target="_blank">
+          <img
+            className="place-items-center w-20 animate-bounce float-right"
+            src="githubLogo.png"
+            alt="Git Hub Logo"
+          ></img>
+          </a>
+          <p className="text-slate-800  font-sans mt-6 ">
+            <b>This Website</b><br></br><br></br> This website is made with React, Three.js
+            and TailwindCSS. Three.js is used to render the cute wallE model you
+            see above and Tailwind is used for styling. This website was built to serve as my portfolio website. I intially built this
+            website using the new REMIX framework, which can be found<a className='text-bold text-blue-500'href="https://github.com/jacobelali3/REMIXresumeWebsite" target="_blank"> here</a>, but there were alot of complications with the 3d model.
+          </p>
+          <a href="https://github.com/jacobelali3/react-resume-website" target="_blank">
+          <img
+            className="place-items-center animate-bounce w-20 float-right"
+            src="githubLogo.png"
+            alt="Git Hub Logo"
+          ></img>
+          </a>
+          <p className="  font-sans mt-6 ">
+            <b>This Website</b><br></br><br></br> This website is build with React, Three.js
+            and TailwindCSS. Three.js is used to render the cute wallE model you
+            see above and Tailwind is used for styling. This website is built
+            from scratch to serve as my portfolio website. I intially built this
+            website using the new REMIX framework, which can be found<a className='text-bold text-blue-500'href="https://github.com/jacobelali3/REMIXresumeWebsite" target="_blank"> here</a>, but there were alot of complications with the 3d model.
+          </p>
+          <a href="https://github.com/jacobelali3/react-resume-website" target="_blank">
+          <img
+            className="place-items-center  animate-bounce w-20 float-right"
+            src="githubLogo.png"
+            alt="Git Hub Logo"
+          ></img>
+          </a>
+          <p className="  font-sans mt-6 ">
+            <b>This Website</b><br></br><br></br> This website is build with React, Three.js
+            and TailwindCSS. Three.js is used to render the cute wallE model you
+            see above and Tailwind is used for styling. This website is built
+            from scratch to serve as my portfolio website. I intially built this
+            website using the new REMIX framework, which can be found<a className='text-bold text-blue-500'href="https://github.com/jacobelali3/REMIXresumeWebsite" target="_blank"> here</a>, but there were alot of complications with the 3d model.
+          </p>
+        
+        
+        </div>
       </div>
     </>
   );
