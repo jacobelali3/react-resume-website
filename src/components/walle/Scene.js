@@ -6,7 +6,7 @@ source: https://sketchfab.com/3d-models/wall-eanimated-a6758de2e5a04f9e821596592
 title: Wall-E(Animated)
 */
 
-import { useRef} from 'react'
+import { useRef, useEffect} from 'react'
 import { useGLTF, useAnimations } from '@react-three/drei'
 
 
@@ -14,7 +14,8 @@ export default function Model({ ...props }) {
   const group = useRef()
   const { nodes, materials, animations } = useGLTF('/scene.gltf')
   const { actions } = useAnimations(animations, group)
-  //useEffect(() =>{
+//Uncomment this code to see animation play. I need the animation to move on the spot.
+  //useEffect(() =>{  
    // actions.Scene.play()
   //})
   return (
