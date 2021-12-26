@@ -127,14 +127,14 @@ function App() {
             2022 (expected)
             <br></br>
             <b> University: </b>University of Technology Sydney <br></br>{" "}
-            <b>WAM:</b> 74
+            <b>WAM:</b> 75
           </p>
         </div>
       </div>
       <div className="flex mt-16 text-slate-800">
         <div className="lg:ml-20  float-left   px-4  text-2xl lg:w-1/2 lg:h-1/4 sm:w-screen sm:h-fit">
           <h2 className="text-4xl text-left font-bold">Projects</h2>
-          
+
           <a
             href="https://github.com/jacobelali3/Software-Engineering-Studio-2B"
             rel="noreferrer"
@@ -204,16 +204,103 @@ function App() {
               {" "}
               here
             </a>
-            , but there were alot of complications with the 3d model.
+            , but there were alot of complications with REMIX's server side and
+            webGL rendering.
           </p>
           <p className="font-semibold mt-10 ">Other Projects</p>
-          <ul className="text-slate-800  font-sans mt-6 list-disc"> 
-            
-            
-            <li className="hover:text-blue-500"><a href="https://github.com/jacobelali3/CprogrammingUTS">Simple interest calculator using <b>C</b>.</a></li>
-            <li className="hover:text-blue-500"><a href="https://github.com/jacobelali3/CProg">Encryption and compression using <b>C</b></a>.</li>
-            <li className="hover:text-blue-500"><a href="https://github.com/jacobelali3/SES-1B-Group-3">Android health app with map and heart rate monitor using <b>Java</b>.</a></li>
+          <ul className=" pl-6 font-sans mt-6 list-disc">
+            <li className="underline decoration-slate-800 hover:text-blue-500">
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://github.com/jacobelali3/CprogrammingUTS"
+              >
+                Banking app using <b>C</b>.
+              </a>
+            </li>
+            <li className="underline decoration-slate-800 hover:text-blue-500">
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://github.com/jacobelali3/CProg"
+              >
+                Encryption and compression using <b>C</b>
+              </a>
+            </li>
+            <li className="underline decoration-slate-800 hover:text-blue-500">
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href="https://github.com/jacobelali3/SES-1B-Group-3"
+              >
+                Android health app with map and heart rate monitor using{" "}
+                <b>Java</b>.
+              </a>
+            </li>
           </ul>
+        </div>
+      </div>
+
+      <div className="flex mt-16 text-slate-800">
+        <div className="lg:ml-20  float-left   px-4  text-2xl lg:w-1/2 lg:h-1/4 sm:w-screen sm:h-fit">
+          <h2 className="text-4xl text-left font-bold">
+            Professional Experience
+          </h2>
+
+          <img
+            className="place-items-center lg:mr-6 rounded-lg w-20 float-right"
+            src="astrnt-logo.png"
+            alt="Astronaut Technologies Logo"
+          ></img>
+          <p className=" font-sans mt-10 ">
+            <b>Astronaut Technologies</b>
+            <br></br>Software Engineer Intern
+            <br></br> November 2021 - Present
+            <br></br>
+            <br></br> Astronaut is an asynchronous video interviewing company
+            offering SAP and SAS services.
+            <br></br>&#8226; Daily standup and product meetings.
+            <br></br>&#8226; Contribute to weekly sprints.
+            <br></br>&#8226; Perform system and API tests.
+          </p>
+
+          <img
+            className="place-items-center mt-10  lg:mr-6 rounded-lg w-20 float-right"
+            src="incomeenergy-logo.png"
+            alt="Income Energy Logo"
+          ></img>
+          <p className=" font-sans mt-10  ">
+            <b>Income Energy</b>
+            <br></br>Software Engineer Intern
+            <br></br>February 2021 - April 2021
+            <br></br>
+            <br></br> Income Energy was a solar startup hosted by Energy Lab, a
+            UTS partner.
+            <br></br>&#8226; Co-developed a billing system in js, html and css.
+            <br></br>&#8226; Formatted pdf bills programatically.
+            <br></br>&#8226; Converted electrical API data into useful
+            analytics.
+          </p>
+        </div>
+      </div>
+
+      <div className="flex mt-8  text-slate-800">
+        <div className="lg:ml-20  float-left   px-4  text-2xl lg:w-1/2 lg:h-1/4 sm:w-screen sm:h-fit">
+          <h2 className="text-4xl text-left font-bold">Skills</h2>
+          <p className=" font-sans font-bold text-2xl mt-10  ">Technical</p>
+          <p className=" font-sans mt-4  ">
+            Programming &#10137; Javascript, typescript, java, C, html, css,
+            MySQL, NoSQL.
+            <br></br>
+            Technologies &#10137; Laravel, React, Remix, Django and Flask,
+            Pandas, Threejs.
+          </p>
+          <p className=" font-sans font-bold text-2xl mt-6  ">Transferable</p>
+          <p className=" font-sans mt-4  ">
+            &#8226; Good <b>problem solving skills</b>, always determined to achieve tasks using creative and proven methods.
+            <br></br>&#8226; Excellent <b>communication</b> and <b>interpersonal skills</b> as demonstrated working in small dev teams aswell as product teams.
+            <br></br>&#8226; <b>Autonomous</b> and self-driven work ethic, able to absorb information and have a <b>passion for learning</b>.
+          </p>
         </div>
       </div>
     </>
