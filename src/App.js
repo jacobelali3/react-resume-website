@@ -1,309 +1,94 @@
 import { Link } from "react-router-dom";
-import { Canvas } from "@react-three/fiber";
-import { OrbitControls } from "@react-three/drei";
-import Scene from "./components/walle/Scene.js";
-import { Suspense } from "react";
-
+import { Router, Routes, Route } from "react-router-dom";
+import BurgerMenu from "./components/burgerMenu.jsx";
+import AboutMe from "./components/aboutMe.jsx";
+import Academia from "./components/academia.jsx";
+import Projects from "./components/projects.jsx";
+import Professional from "./components/professional.jsx";
+import Contact from "./components/contactMe.jsx";
+import Homepage from "./components/home.jsx";
 function App() {
   return (
-    <>
-      <div>
-        <nav className="flex items-center justify-between flex-wrap bg-black p-6">
-          <div className="flex items-center flex-shrink-0 text-white mr-6"></div>
-          <div className="block lg:hidden">
-            <button className="flex items-center px-3 py-2 border rounded text-white border-teal-400 hover:text-blue-300 hover:border-blue-300">
-              <svg
-                className="fill-current h-3 w-3"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>Menu</title>
-                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-              </svg>
-            </button>
+    <div  className="bg-white dark:bg-black">
+     
+        <nav className="top-0 fixed z-50  w-screen    bg-black p-6">
+          <div className="  text-white mr-6"></div>
+          <div className="lg:hidden">
+            <BurgerMenu />
           </div>
-          <div className="w-full flex flex-grow lg:flex lg:items-center lg:w-auto">
-            <div className="  text-xl lg:flex-grow">
-              <p className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-blue-300 mr-4">
+          <div className="w-full  lg:flex lg:items-center lg:w-auto">
+            <div className=" hidden sm:hidden md:hidden lg:flex text-xl lg:flex-grow">
+              <p className=" mt-4  lg:mt-0 text-white hover:text-blue-300 mr-4">
                 <Link to="/">Home</Link>
               </p>
-              <p className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-blue-300 mr-4">
-                <Link to="/">About me</Link>
+              <p className=" mt-4 lg:mt-0 text-white hover:text-blue-300 mr-4">
+                <Link to="/AboutMe">About me</Link>
               </p>
-              <p className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-blue-300 mr-4">
-                <Link to="/">Academia</Link>
+              <p className=" mt-4  lg:mt-0 text-white hover:text-blue-300 mr-4">
+                <Link to="/Academia">Academia</Link>
               </p>
-              <p className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-blue-300 mr-4">
-                <Link to="/">Professional</Link>
+              <p className=" mt-4  lg:mt-0 text-white hover:text-blue-300 mr-4">
+                <Link to="/Professional">Professional</Link>
               </p>
-              <p className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-blue-300 mr-4">
-                <Link to="/">Contact Me</Link>
+              <p className=" mt-4 lg:mt-0 text-white hover:text-blue-300 mr-4">
+                <Link to="/Projects">Projects</Link>
+              </p>
+              <p className="mt-4  lg:mt-0 text-white hover:text-blue-300 mr-4">
+                <Link to="/ContactMe">Contact Me</Link>
               </p>
             </div>
 
-            <div>
+            <div className=" top-7 left-2 ">
               <a
-                href="/resume.pdf"
-                className="inline-block text-xl px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-300 hover:bg-white mt-4 lg:mt-0"
-                download="JacobElaliResume.pdf"
+                href={"/assets/resume.pdf"}
+                className=" text-xl  px-4 py-1 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-300 hover:bg-white mt-4 lg:mt-0"
+                target="_blank"
               >
                 Resume
               </a>
             </div>
           </div>
         </nav>
-      </div>
 
-      <div className="lg:w-screen   my-8 container bg-gradient-to-r from-black to-blue-300  px-6 bg-opacity-50 flex items-center  rounded-tr-full rounded-br-full overflow-hidden  ">
-        <div className="max-w-xl">
-          <div className="text-6xl">
-            <h2 className=" text-white font-semibold text-center pt-2">
-              Jacob Elali
-            </h2>
+        <div className="lg:w-screen  bottom-32  mt-32 mb-8 container bg-gradient-to-r from-black to-blue-300  px-6 bg-opacity-50 flex items-center  rounded-tr-full rounded-br-full overflow-hidden  ">
+          <div className="max-w-xl">
+            <div className="text-3xl md:text-6xl lg:text-6xl">
+              <h2 className=" text-white font-semibold text-center lg:ml-64 pt-2">
+                Jacob Elali
+              </h2>
+            </div>
+
+            <div className="mt-6 py-2 ">
+              <a
+                href="/assets/resume.pdf"
+                className="lg:inline-block lg:text-lg md:text-base lg:ml-64 sm:ml-0 md:ml-6 px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-300 hover:bg-white "
+                target="_blank"
+              >
+                Resume
+              </a>
+            </div>
           </div>
-
-          <div className="mt-6 py-2 ">
-            <a
-              href="/resume.pdf"
-              className="inline-block text-xl sm:ml-0 md:ml-6 px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-300 hover:bg-white lg:ml-0 "
-              download="JacobElaliResume.pdf"
-            >
-              Resume
-            </a>
+          <div className="lg:ml-72 sm:ml-32 md:ml-32 relative py-4 px-4 ">
+            <div className="blur opacity-50 absolute -inset-0 bg-blue-200 rounded-full"></div>
+            <img
+              alt="jacobElali"
+              className=" border-transparent hover:border-2 rounded-full relative lg:w-60 md:w-40 sm:w-40 w-40"
+              src={"/assets/myprofilepic.jpg"}
+            />
           </div>
         </div>
-        <div className="lg:ml-72 sm:ml-32 md:ml-32 relative py-4 px-4 ">
-          <div className="blur opacity-50 absolute -inset-0 bg-blue-200 rounded-full"></div>
-          <img
-            alt="jacobElali"
-            className=" border-transparent hover:border-2 rounded-full relative lg:w-60 md:w-40 sm:w-40"
-            src={"/myprofilepic.jpg"}
-          />
-        </div>
-      </div>
+        
 
-      <div className="flex text-slate-800">
-        <div className="lg:ml-20   mt-2  px-4   lg:w-1/2 lg:h-1/4 sm:w-screen sm:h-fit">
-          <h2 className=" text-4xl text-left font-bold">About Me</h2>
-          <p className=" text-2xl font-sans mt-6 ">
-            I am a junior software engineer based in Sydney, Australia. My
-            passion lies within web development and I love to explore the latest
-            cutting edge technology! My most recent experience has been as a
-            Junior Web Developer as a SWE Intern. I am looking for opportunities
-            where I can learn, grow and thrive with development. I also love
-            building real, genuine relationships with people.
-          </p>
-        </div>
-      </div>
-      <div className="flex lg:ml-48 w-96 mt-8 h-96  ">
-        <Canvas camera={{ pov: 100, position: [3, 3, 7] }}>
-          <OrbitControls
-            enablePan={true}
-            enableZoom={true}
-            enableRotate={true}
-          />
-          <ambientLight intensity={1} />
-          <directionalLight />
-
-          <Suspense fallback={null}>
-            <Scene />
-          </Suspense>
-        </Canvas>
-      </div>
-      <div className="text-slate-800 flex top-48">
-        <div className="lg:ml-20  float-left   px-4   lg:w-1/2 lg:h-1/4 sm:w-screen sm:h-fit">
-          <h2 className="text-4xl text-left font-bold">Academia</h2>
-          <img
-            className="place-items-center w-32 float-right"
-            src="utslogo.jpg"
-            alt="utslogo"
-            rel="noreferrer"
-          ></img>
-          <p className="text-2xl mt-6">
-            <b>Course: </b>Bachelor of Engineering (Honours) <br></br>{" "}
-            <b>Major: </b>Software Engineering
-            <br></br>
-            <b> Sub-Major: </b>Real-time Systems <br></br> January 2017 – June
-            2022 (expected)
-            <br></br>
-            <b> University: </b>University of Technology Sydney <br></br>{" "}
-            <b>WAM:</b> 75
-          </p>
-        </div>
-      </div>
-      <div className="flex mt-16 text-slate-800">
-        <div className="lg:ml-20  float-left   px-4  text-2xl lg:w-1/2 lg:h-1/4 sm:w-screen sm:h-fit">
-          <h2 className="text-4xl text-left font-bold">Projects</h2>
-
-          <a
-            href="https://github.com/jacobelali3/Software-Engineering-Studio-2B"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <img
-              className="place-items-center mt-4  animate-bounce w-20 float-right"
-              src="githubLogo.png"
-              alt="Git Hub Logo"
-            ></img>
-          </a>
-          <p className="  font-sans  mt-10 ">
-            <b>UTS HELPS Prototype</b>
-            <br></br>
-            <br></br> Collaborated on a prototype for the outdated UTS HELPS
-            website that handled student appointment booking. The website was
-            built with django, sqlite, JS and html. In addition to booking, the
-            system had authentication, chat, email and various admin
-            functionality.
-          </p>
-          <a
-            href="https://github.com/jacobelali3/2021-SES3B-Team4"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <img
-              className="place-items-center mt-10 animate-bounce w-20 float-right"
-              src="githubLogo.png"
-              alt="Git Hub Logo"
-            ></img>
-          </a>
-          <p className=" font-sans mt-10 ">
-            <b>COVID-19 App</b>
-            <br></br>
-            <br></br> Collaborated on an application that was developed in
-            response to the Covid-19 pandemic. The main feature consisted of a
-            chatbot that predicted if a patient had covid. In addition; the app
-            provided statistics, news, visual models and client-to-doctor
-            communication functionality. It was built with React, Material UI
-            and Flask.
-          </p>
-          <a
-            href="https://github.com/jacobelali3/react-resume-website"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              className="place-items-center mt-10 w-20 animate-bounce float-right"
-              src="githubLogo.png"
-              alt="Git Hub Logo"
-            ></img>
-          </a>
-          <p className="  font-sans mt-10 ">
-            <b>This Website</b>
-            <br></br>
-            <br></br> This website is made with React, Three.js and TailwindCSS.
-            Three.js is used to render the cute wallE model you see above and
-            Tailwind is used for styling. This website was built to serve as my
-            portfolio website. I intially built this website using the new REMIX
-            framework, which can be found
-            <a
-              className="text-bold text-blue-500"
-              href="https://github.com/jacobelali3/REMIXresumeWebsite"
-              rel="noreferrer"
-              target="_blank"
-            >
-              {" "}
-              here
-            </a>
-            , but there were alot of complications with REMIX's server side and
-            webGL rendering.
-          </p>
-          <p className="font-semibold mt-10 ">Other Projects</p>
-          <ul className=" pl-6 font-sans mt-6 list-disc">
-            <li className="underline decoration-slate-800 hover:text-blue-500">
-              <a
-                rel="noreferrer"
-                target="_blank"
-                href="https://github.com/jacobelali3/CprogrammingUTS"
-              >
-                Banking app using <b>C</b>.
-              </a>
-            </li>
-            <li className="underline decoration-slate-800 hover:text-blue-500">
-              <a
-                rel="noreferrer"
-                target="_blank"
-                href="https://github.com/jacobelali3/CProg"
-              >
-                Encryption and compression using <b>C</b>
-              </a>
-            </li>
-            <li className="underline decoration-slate-800 hover:text-blue-500">
-              <a
-                rel="noreferrer"
-                target="_blank"
-                href="https://github.com/jacobelali3/SES-1B-Group-3"
-              >
-                Android health app with map and heart rate monitor using{" "}
-                <b>Java</b>.
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div className="flex mt-16 text-slate-800">
-        <div className="lg:ml-20  float-left   px-4  text-2xl lg:w-1/2 lg:h-1/4 sm:w-screen sm:h-fit">
-          <h2 className="text-4xl text-left font-bold">
-            Professional Experience
-          </h2>
-
-          <img
-            className="place-items-center lg:mr-6 rounded-lg w-20 float-right"
-            src="astrnt-logo.png"
-            alt="Astronaut Technologies Logo"
-          ></img>
-          <p className=" font-sans mt-10 ">
-            <b>Astronaut Technologies</b>
-            <br></br>Software Engineer Intern
-            <br></br> November 2021 - Present
-            <br></br>
-            <br></br> Astronaut is an asynchronous video interviewing company
-            offering SAP and SAS services.
-            <br></br>&#8226; Daily standup and product meetings.
-            <br></br>&#8226; Contribute to weekly sprints.
-            <br></br>&#8226; Perform system and API tests.
-          </p>
-
-          <img
-            className="place-items-center mt-10  lg:mr-6 rounded-lg w-20 float-right"
-            src="incomeenergy-logo.png"
-            alt="Income Energy Logo"
-          ></img>
-          <p className=" font-sans mt-10  ">
-            <b>Income Energy</b>
-            <br></br>Software Engineer Intern
-            <br></br>February 2021 - April 2021
-            <br></br>
-            <br></br> Income Energy was a solar startup hosted by Energy Lab, a
-            UTS partner.
-            <br></br>&#8226; Co-developed a billing system in js, html and css.
-            <br></br>&#8226; Formatted pdf bills programatically.
-            <br></br>&#8226; Converted electrical API data into useful
-            analytics.
-          </p>
-        </div>
-      </div>
-
-      <div className="flex mt-8  text-slate-800">
-        <div className="lg:ml-20  float-left   px-4  text-2xl lg:w-1/2 lg:h-1/4 sm:w-screen sm:h-fit">
-          <h2 className="text-4xl text-left font-bold">Skills</h2>
-          <p className=" font-sans font-bold text-2xl mt-10  ">Technical</p>
-          <p className=" font-sans mt-4  ">
-            Programming &#10137; Javascript, typescript, java, C, html, css,
-            MySQL, NoSQL.
-            <br></br>
-            Technologies &#10137; Laravel, React, Remix, Django and Flask,
-            Pandas, Threejs.
-          </p>
-          <p className=" font-sans font-bold text-2xl mt-6  ">Transferable</p>
-          <p className=" font-sans mt-4  ">
-            &#8226; Good <b>problem solving skills</b>, always determined to achieve tasks using creative and proven methods.
-            <br></br>&#8226; Excellent <b>communication</b> and <b>interpersonal skills</b> as demonstrated working in small dev teams aswell as product teams.
-            <br></br>&#8226; <b>Autonomous</b> and self-driven work ethic, able to absorb information and have a <b>passion for learning</b>.
-          </p>
-        </div>
-      </div>
-    </>
+        <Routes>
+        <Route path="/" element={<Homepage />} />
+          <Route path="AboutMe" element={<AboutMe />} />
+          <Route path="Academia" element={<Academia />} />
+          <Route path="Professional" element={<Professional />} />
+          <Route path="Projects" element={<Projects />} />
+          <Route path="ContactMe" element={<Contact />} />
+        </Routes>
+      
+    </div>
   );
 }
 
