@@ -7,10 +7,12 @@ import Projects from "./components/projects.jsx";
 import Professional from "./components/professional.jsx";
 import Contact from "./components/contactMe.jsx";
 import Homepage from "./components/home.jsx";
+
+
 function App() {
   return (
-    <div  className="bg-white dark:bg-black">
-     
+    <div  className="bg-white dark:bg-black  overflow-auto">
+  
         <nav className="top-0 fixed z-50  w-screen    bg-black p-6">
           <div className="  text-white mr-6"></div>
           <div className="lg:hidden">
@@ -43,17 +45,19 @@ function App() {
                 href={"/assets/resume.pdf"}
                 className=" text-xl  px-4 py-1 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-300 hover:bg-white mt-4 lg:mt-0"
                 target="_blank"
+                rel="noreferrer"
               >
                 Resume
               </a>
             </div>
           </div>
         </nav>
+       
 
-        <div className="lg:w-screen  bottom-32  mt-32 mb-8 container bg-gradient-to-r from-black to-blue-300  px-6 bg-opacity-50 flex items-center  rounded-tr-full rounded-br-full overflow-hidden  ">
+        <div className="lg:w-screen  bottom-32  z-20 mt-32 container bg-gradient-to-r from-black to-blue-300  px-6 bg-opacity-50 flex items-center  rounded-tr-full rounded-br-full overflow-hidden  ">
           <div className="max-w-xl">
             <div className="text-3xl md:text-6xl lg:text-6xl">
-              <h2 className=" text-white font-semibold text-center lg:ml-64 pt-2">
+              <h2 className=" text-white dark:text-slate-300 font-semibold text-center lg:ml-64 pt-2">
                 Jacob Elali
               </h2>
             </div>
@@ -69,7 +73,7 @@ function App() {
             </div>
           </div>
           <div className="lg:ml-72 sm:ml-32 md:ml-32 relative py-4 px-4 ">
-            <div className="blur opacity-50 absolute -inset-0 bg-blue-200 rounded-full"></div>
+            <div className="blur opacity-50 dark:opacity-80 absolute -inset-0 bg-blue-200 dark:bg-blue-200 rounded-full"></div>
             <img
               alt="jacobElali"
               className=" border-transparent hover:border-2 rounded-full relative lg:w-60 md:w-40 sm:w-40 w-40"

@@ -1,34 +1,17 @@
-import '../index.css'
+import "../index.css";
+import Video from "./Video/Code-Right3.mp4"
 
 function homepage() {
-    return (
-        <div className='flex flex-row w-screen '>
-       <img
-            className="w-1/3 h-48 rounded-tl rounded-bl"
-            src={'/assets/homepage.gif'}
-            alt="homegif"
-            rel="noreferrer"
-            
-
-          ></img>
-          <img
-            className="w-1/3 h-48"
-            src={'/assets/homepage.gif'}
-            alt="homegif"
-            rel="noreferrer"
-            
-
-          ></img>
-          <img
-            className="w-1/3 h-48"
-            src={'/assets/homepage.gif'}
-            alt="homegif"
-            rel="noreferrer"
-            
-
-          ></img>
-        </div>
-    )
+  return (
+    <div >
+      <video autoPlay loop muted className="w-full h-full object-fill   -z-50">
+        <source src={Video} type="video/mp4"></source>
+      </video>
+      
+     
+    
+    </div>
+  );
 }
 
-export default homepage
+export default homepage;
