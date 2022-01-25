@@ -3,8 +3,8 @@ import '../index.css'
 
 function projects() {
   return (
-    <div className="flex mt-16 text-slate-800">
-      <div className="lg:ml-20  float-left   px-4  text-2xl lg:w-1/2 lg:h-1/4 sm:w-screen sm:h-fit">
+    <div className="flex my-16">
+      <div className="lg:ml-20    px-4  text-2xl lg:w-1/2 w-auto lg:relative lg:left-80">
         <h2 className="text-4xl text-left font-bold">Projects</h2>
 
         <a

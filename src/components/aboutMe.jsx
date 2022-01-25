@@ -8,12 +8,12 @@ import '../index.css'
 function aboutMe() {
   return (
    
-    <div className="pb-4 flex-row lg:flex justify-center sm:block md:block">
+    <div className="pb-4  lg:flex justify-center block md:block mt-14 ">
     
-        <div className=" lg:w-1/2 sm:w-screen mt-2  px-4  text-slate-800 ">
-          <h1 className=" text-4xl font-bold lg:text-left md:text-center sm:text-center">About Me</h1>
+        <div className=" lg:w-1/2 sm:w-screen mt-2  px-4   ">
+          <h1 className=" text-4xl font-bold ">About Me</h1>
           
-          <p className="px-2 text-left text-2xl  font-sans mt-6 ">
+          <p className="px-2 text-2xl  font-sans mt-6 ">
             I am a junior software engineer based in Sydney, Australia. My
             passion lies within web development and I love to explore the latest
             cutting edge technology! <br></br><br></br>My most recent experience has been as a

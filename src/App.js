@@ -5,21 +5,22 @@ import AboutMe from "./components/aboutMe.jsx";
 import Academia from "./components/academia.jsx";
 import Projects from "./components/projects.jsx";
 import Professional from "./components/professional.jsx";
-import Contact from "./components/contactMe.jsx";
+
 import Homepage from "./components/home.jsx";
 
 
 function App() {
   return (
-    <div  className="bg-white dark:bg-black  overflow-auto">
+    <div  className="bg-white dark:bg-black overflow-auto w-full h-full text-slate-800 dark:text-white ">
   
-        <nav className="top-0 fixed z-50  w-screen    bg-black p-6">
-          <div className="  text-white mr-6"></div>
-          <div className="lg:hidden">
+        <nav className="right-0 top-0 fixed z-50  w-22 lg:w-screen rounded-full lg:rounded-none dark:bg-slate-800  bg-black p-6">
+
+          <div className="  text-white "></div>
+          <div className="lg:hidden float-right">
             <BurgerMenu />
           </div>
-          <div className="w-full  lg:flex lg:items-center lg:w-auto">
-            <div className=" hidden sm:hidden md:hidden lg:flex text-xl lg:flex-grow">
+          <div className="lg:ml-4 w-full  lg:flex lg:justify-center lg:w-auto">
+            <div className=" hidden  lg:flex text-xl lg:flex-grow">
               <p className=" mt-4  lg:mt-0 text-white hover:text-blue-300 mr-4">
                 <Link to="/">Home</Link>
               </p>
@@ -35,26 +36,24 @@ function App() {
               <p className=" mt-4 lg:mt-0 text-white hover:text-blue-300 mr-4">
                 <Link to="/Projects">Projects</Link>
               </p>
-              <p className="mt-4  lg:mt-0 text-white hover:text-blue-300 mr-4">
-                <Link to="/ContactMe">Contact Me</Link>
-              </p>
+             
             </div>
 
-            <div className=" top-7 left-2 ">
+            <div className="">
               <a
                 href={"/assets/resume.pdf"}
-                className=" text-xl  px-4 py-1 leading-none border rounded text-white border-white hover:border-transparent hover:text-blue-300 hover:bg-white mt-4 lg:mt-0"
+                className=" text-xl hidden  lg:flex px-4 py-1  mr-4  border rounded text-white border-white hover:border-transparent hover:text-blue-300 hover:bg-white "
                 target="_blank"
                 rel="noreferrer"
               >
-                Resume
+                Contact Me
               </a>
             </div>
           </div>
         </nav>
        
 
-        <div className="lg:w-screen  bottom-32  z-20 mt-32 container bg-gradient-to-r from-black to-blue-300  px-6 bg-opacity-50 flex items-center  rounded-tr-full rounded-br-full overflow-hidden  ">
+        <div className="lg:w-screen  relative z-20 mt-16 lg:mt-32 container bg-gradient-to-r from-black to-blue-300  px-6 bg-opacity-50 flex items-center  rounded-tr-full rounded-br-full overflow-hidden  ">
           <div className="max-w-xl">
             <div className="text-3xl md:text-6xl lg:text-6xl">
               <h2 className=" text-white dark:text-slate-300 font-semibold text-center lg:ml-64 pt-2">
@@ -89,7 +88,7 @@ function App() {
           <Route path="Academia" element={<Academia />} />
           <Route path="Professional" element={<Professional />} />
           <Route path="Projects" element={<Projects />} />
-          <Route path="ContactMe" element={<Contact />} />
+
         </Routes>
       
     </div>

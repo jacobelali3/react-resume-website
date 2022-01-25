@@ -4,14 +4,17 @@ import '../index.css'
 function academia() {
     return (
         
-      <div>
-        <div className="text-slate-800 lg:w-1/2 px-4 py-4 flex flex-col justify-center">
-
-          <h2 className="text-4xl  text-center font-bold mb-12  ">Academia</h2>
+      
+        <div className=" lg:w-1/2 px-4 py-4 block md:block lg:flex lg:flex-col  mt-14 h-full ">
+          <div className='w-auto lg:relative lg:left-80'>
+          <div>
+          <h2 className="text-4xl   font-bold  ">Academia</h2>
+          </div>
           
+          <div className=" mt-12 ">
           <img
-            className="w-16 h-16 align-self"
-            src={'/assets/utslogo.jpg'}
+            className="w-20 h-12 float-right relative mb-12 rounded-lg bg-black px-2 py-2"
+            src={'/assets/utslogo.png'}
             alt="utslogo"
             rel="noreferrer"
             
@@ -27,27 +30,41 @@ function academia() {
             <b> University: </b>University of Technology Sydney <br></br>{" "}
             <b>WAM:</b> 75
           </p>
-          <p className="text-3xl">
-            <b>Engineering Capstone</b>
-          </p>
-          <p className="text-2xl mt-2 mb-4">
+          </div>
+
+
+
+         
+          
+          <div>
+          <h2 className="mt-12 text-3xl   font-bold  ">Engineering Capstone</h2>
+          </div>
+
+          <div className='mb-4'>
+          <p className="text-2xl mt-12 mb-4 ">
             <b>Research Topic:</b> Assisted Posting for Small Business Owners on
             Instagram<br></br>
-            <b>Supervisor: </b> Alan Parr<br></br>Based on thorough research,
+            <b>Supervisor: </b>Prof. Alan Parr<br></br><br></br>Based on thorough research,
             social media marketing appears to have a large impact on small businesses. My
             engineering capstone attempts to create a program that provides data
             analyics and predictive suggestions for small business owners on
             Instragram using machine learning.{" "}
           </p>
-          </div>
+          
+
+     
           <a
               href={"/assets/Research_Proposal_Jacob_Elali.pdf"}
-              className=" text-xl border rounded  border-black hover:border-2 hover:border-blue-300 hover:text-blue-300 hover:bg-white  "
+              className="mt-4  relative w-56 text-xl border text-center rounded  border-black dark:border-white hover:border-2 hover:border-blue-300 hover:text-blue-300 hover:bg-white  px-2 py-2"
               target="_blank"
+              rel="noreferrer"
             >
               View Proposal Paper
             </a>
             </div>
+            </div>
+            </div>
+            
     )
 }
 
