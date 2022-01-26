@@ -15,7 +15,7 @@ function homepage() {
     </div>
 
     <div  className=" h-22 mt-48   flex  justify-center mx-12">
-      <div className="px-6 py-6  bg-slate-800 rounded-lg relative animate-beat ">
+      <div className="px-6 py-6  bg-slate-800 rounded-lg animate-beat ">
         <h1 className="text-2xl text-white text-center">Welcome,<br></br>I'm a software engineer with a passion for technology!</h1>
         <p className="pt-4 text-white text-center">Check me out!</p>
       </div>
