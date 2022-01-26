@@ -5,14 +5,17 @@ import AboutMe from "./components/aboutMe.jsx";
 import Academia from "./components/academia.jsx";
 import Projects from "./components/projects.jsx";
 import Professional from "./components/professional.jsx";
-
 import Homepage from "./components/home.jsx";
+import DarkMode from "./components/darkMode.jsx";
+
 
 
 function App() {
+  
+
   return (
     <div  className="bg-white dark:bg-black overflow-auto w-full h-full text-slate-800 dark:text-white ">
-  
+    <div className="left-0 top-0 fixed z-50 w-22 bg-black"><DarkMode /></div>
         <nav className="right-0 top-0 fixed z-50  w-22 lg:w-screen rounded-full lg:rounded-none dark:bg-slate-800  bg-black p-6">
 
           <div className="  text-white "></div>
@@ -36,12 +39,13 @@ function App() {
               <p className=" mt-4 lg:mt-0 text-white hover:text-blue-300 mr-4">
                 <Link to="/Projects">Projects</Link>
               </p>
+              <DarkMode />
              
             </div>
 
             <div className="">
               <a
-                href={"/assets/resume.pdf"}
+                href={"mailto:jacobelali3@outlook.com"}
                 className=" text-xl hidden  lg:flex px-4 py-1  mr-4  border rounded text-white border-white hover:border-transparent hover:text-blue-300 hover:bg-white "
                 target="_blank"
                 rel="noreferrer"

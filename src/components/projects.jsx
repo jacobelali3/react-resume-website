@@ -4,7 +4,7 @@ import '../index.css'
 function projects() {
   return (
     <div className="flex my-16">
-      <div className="lg:ml-20    px-4  text-2xl lg:w-1/2 w-auto lg:relative lg:left-80">
+      <div className="lg:ml-20    px-4  text-2xl lg:w-1/2 w-auto ">
         <h2 className="text-4xl text-left font-bold">Projects</h2>
 
         <a
@@ -13,7 +13,7 @@ function projects() {
           target="_blank"
         >
           <img
-            className="place-items-center mt-4  animate-bounce w-20 float-right"
+            className="place-items-center mt-4  animate-bounce w-20 float-right dark:bg-white dark:rounded-full"
             src={"/assets/githubLogo.png"}
             alt="Git Hub Logo"
           ></img>
@@ -33,7 +33,7 @@ function projects() {
           target="_blank"
         >
           <img
-            className="place-items-center mt-10 animate-bounce w-20 float-right"
+            className="place-items-center mt-10 animate-bounce w-20 float-right dark:bg-white dark:rounded-full"
             src={"/assets/githubLogo.png"}
             alt="Git Hub Logo"
           ></img>
@@ -54,7 +54,7 @@ function projects() {
           rel="noreferrer"
         >
           <img
-            className="place-items-center mt-10 w-20 animate-bounce float-right"
+            className="place-items-center mt-10 w-20 animate-bounce float-right dark:bg-white dark:rounded-full"
             src={"/assets/githubLogo.png"}
             alt="Git Hub Logo"
           ></img>
@@ -62,8 +62,8 @@ function projects() {
         <p className="  font-sans mt-10 ">
           <b>This Website</b>
           <br></br>
-          <br></br> This website is made with React, Three.js and TailwindCSS.
-          Three.js is used to render the cute wallE model you see above and
+          <br></br> This website is made with React, Three.js and Tailwind.
+          Three.js is used to render the cute wallE model in the 'About Me' section and
           Tailwind is used for styling. This website was built to serve as my
           portfolio website. I intially built this website using the new REMIX
           framework, which can be found
@@ -81,7 +81,7 @@ function projects() {
         </p>
         <p className="font-semibold mt-10 ">Other Projects</p>
         <ul className=" pl-6 font-sans mt-6 list-disc">
-          <li className="underline decoration-slate-800 hover:text-blue-500">
+          <li className="underline decoration-blue-400 hover:text-blue-500">
             <a
               rel="noreferrer"
               target="_blank"
@@ -90,7 +90,7 @@ function projects() {
               Banking app using <b>C</b>.
             </a>
           </li>
-          <li className="underline decoration-slate-800 hover:text-blue-500">
+          <li className="underline decoration-blue-400 hover:text-blue-500">
             <a
               rel="noreferrer"
               target="_blank"
@@ -99,7 +99,7 @@ function projects() {
               Encryption and compression using <b>C</b>
             </a>
           </li>
-          <li className="underline decoration-slate-800 hover:text-blue-500">
+          <li className="underline decoration-blue-400 hover:text-blue-500">
             <a
               rel="noreferrer"
               target="_blank"

@@ -17,9 +17,22 @@ function aboutMe() {
             I am a junior software engineer based in Sydney, Australia. My
             passion lies within web development and I love to explore the latest
             cutting edge technology! <br></br><br></br>My most recent experience has been as a
-            Junior Web Developer as a SWE Intern. I am looking for opportunities
+            Junior Web Developer as a SWE Intern. Currently im learning both frontend and backend in hopes of becoming a full stack. I am looking for opportunities
             where I can learn, grow and thrive with development. I also love
             building real, genuine relationships with people.
+            <br></br>
+            <br></br>
+            When I was a kid, I remember watching the movie wall-E and reading a magazine about Hondas Robot 
+            <a
+            className="text-bold text-blue-500"
+            href="https://en.wikipedia.org/wiki/ASIMO"
+            rel="noreferrer"
+            target="_blank"
+          >
+            {" "}
+            ASIMO 
+          </a>
+           , which greatly inspired my love for technology. The use of programs and machinery to serve humanity gave me hope for a future with countless possibilites. Naturally, my specialisation into software happened thereafter.
           </p>
         
       </div>
@@ -31,7 +44,7 @@ function aboutMe() {
               enableZoom={true}
               enableRotate={true}
             />
-            {/*<Stars radius={200}saturation={500} />*/}
+            <Stars radius={200}saturation={500} />
             <ambientLight intensity={1} />
             <directionalLight />
 
