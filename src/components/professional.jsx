@@ -1,8 +1,16 @@
 import '../index.css'
+import {Helmet} from "react-helmet";
 
 function professional() {
     return (
         <div className="flex mt-16  lg:flex-row flex-col mb-12 ">
+
+<Helmet>
+        <meta charSet="utf-8" />
+        <title>Professional</title>
+        <meta name="Professional" content="Jacob Elali portfolio software engineer professional experience sydney australia" />
+      </Helmet>
+
         <div className="lg:ml-20   px-4  text-2xl ">
           <h2 className="text-4xl text-left font-bold">
             Professional Experience

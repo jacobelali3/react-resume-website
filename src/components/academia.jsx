@@ -1,5 +1,5 @@
 import '../index.css'
-
+import {Helmet} from "react-helmet";
 
 function academia() {
     return (
@@ -7,6 +7,12 @@ function academia() {
       
         <div className="justify-center lg:w-1/2 lg:ml-20 px-4 py-4 block md:block lg:flex lg:flex-col  mt-14 h-full ">
           
+          <Helmet>
+        
+        <title>Academia</title>
+        <meta name="Academia" content="Jacob Elali portfolio software engineer academic academia university uts sydney australia" />
+      </Helmet>
+
           <div>
           <h2 className="text-4xl   font-bold  ">Academia</h2>
           </div>

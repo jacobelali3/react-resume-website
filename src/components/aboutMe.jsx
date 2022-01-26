@@ -3,13 +3,17 @@ import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Stars, Center } from "@react-three/drei";
 import '../index.css'
-
+import {Helmet} from "react-helmet";
 
 function aboutMe() {
   return (
    
     <div className="pb-4  lg:flex justify-center block md:block mt-14 ">
-    
+    <Helmet>
+     
+        <title>About Me</title>
+        <meta name="About Me" content="Jacob Elali portfolio software engineer about me page description sydney australia" />
+      </Helmet>
         <div className=" lg:w-1/2 sm:w-screen mt-2  px-4   ">
           <h1 className=" text-4xl font-bold ">About Me</h1>
           

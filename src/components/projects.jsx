@@ -1,9 +1,15 @@
 import '../index.css'
-
+import {Helmet} from "react-helmet";
 
 function projects() {
   return (
     <div className="flex my-16">
+<Helmet>
+        <meta charSet="utf-8" />
+        <title>Projects</title>
+        <meta name="Projects" content="Jacob Elali portfolio software engineer projects hobby android java javascript web developer sydney australia" />
+      </Helmet>
+
       <div className="lg:ml-20    px-4  text-2xl lg:w-1/2 w-auto ">
         <h2 className="text-4xl text-left font-bold">Projects</h2>
 
