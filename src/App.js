@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Router, Routes, Route } from "react-router-dom";
+import {  Routes, Route } from "react-router-dom";
 import BurgerMenu from "./components/burgerMenu.jsx";
 import AboutMe from "./components/aboutMe.jsx";
 import Academia from "./components/academia.jsx";
