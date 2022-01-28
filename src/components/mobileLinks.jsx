@@ -51,13 +51,7 @@ function MobileNav() {
         
       </nav>
 
-      <Routes>
-        <Route path="/" />
-        <Route path="AboutMe" />
-        <Route path="Academia" />
-        <Route path="Professional" />
-        <Route path="Projects" />
-      </Routes>
+    
     </div>
   );
 }

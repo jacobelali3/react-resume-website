@@ -26,7 +26,7 @@ function aboutMe() {
             building real, genuine relationships with people.
             <br></br>
             <br></br>
-            When I was a kid, I remember watching the movie wall-E and reading a magazine about Hondas Robot 
+            When I was a kid, I remember watching the movie Wall-E and reading a magazine about Hondas Robot 
             <a
             className="text-bold text-blue-500"
             href="https://en.wikipedia.org/wiki/ASIMO"
@@ -41,6 +41,7 @@ function aboutMe() {
         
       </div>
       <div className="mt-12 h-96  ">
+        <p className="text-md text-center italic animate-pulse">Touch me!</p>
         <Canvas camera={{ pov: 100, position: [3, 4, 6.5] }}>
           <Suspense fallback={null}>
             <OrbitControls
