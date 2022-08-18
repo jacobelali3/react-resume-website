@@ -1,13 +1,16 @@
 import "../index.css";
 import Video from "./Video/Code-Right3.mp4"
 import { Link } from "react-router-dom";
+import { Suspense } from "react";
 function homepage() {
   return (
     <div>
     <div className="w-full h-full top-0 bottom-0 absolute overflow-hidden object-cover min-h-fill min-w-full " >
+      <Suspense fallback= {<h1>loading cool background...</h1>}>
       <video playsInline autoPlay loop muted className="object-cover w-full h-full min-w-full min-h-full -z-50 ">
         <source src={Video} type="video/mp4"></source>
       </video>
+      </Suspense>
 
 
 
