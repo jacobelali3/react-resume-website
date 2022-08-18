@@ -7,14 +7,13 @@ function homepage() {
   return (
     <div>
 
-    <div className="w-full h-full top-0 bottom-0 absolute overflow-hidden object-cover min-h-fill min-w-full " >
     <Suspense fallback= {<Spinner></Spinner>}>
+    <div className="w-full h-full top-0 bottom-0 absolute overflow-hidden object-cover min-h-fill min-w-full " >
       <video playsInline autoPlay loop muted className="object-cover w-full h-full min-w-full min-h-full -z-50 ">
         <source src={Video} type="video/mp4"></source>
       </video>
-      </Suspense>
     </div>
-
+    </Suspense>
 
 
     <div  className=" h-22 mt-48   flex  justify-center mx-12">
