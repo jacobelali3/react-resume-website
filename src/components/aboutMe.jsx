@@ -23,7 +23,7 @@ function aboutMe() {
           lies within web development and I love to explore the latest cutting
           edge technology! <br></br>
           <br></br>I currently work as a Backend Engineer at Macquarie Bank.{" "}
-          <img  className="h-8 inline dark:bg-opacity-80 dark:bg-white rounded"
+          <img  className="mt-4 h-8 inline dark:bg-opacity-80 dark:bg-white rounded"
             src={'/assets/macquarie-bank-logo.png'}
             alt="utslogo"
             rel="noreferrer"></img>
