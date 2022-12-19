@@ -19,7 +19,7 @@ function aboutMe() {
         <h1 className=" text-4xl font-bold ">About Me</h1>
 
         <p className="px-2 text-2xl  font-sans mt-6 ">
-          I am a junior software engineer based in Sydney, Australia. My passion
+          I am a software engineer based in Sydney, Australia. My passion
           lies within web development and I love to explore the latest cutting
           edge technology! <br></br>
           <br></br>I currently work as a Backend Engineer at Macquarie Bank.{" "}
