@@ -18,6 +18,28 @@ function professional() {
 
           <div className='mt-12 block p-6 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700'>
           <img
+            className=" mt-10 ml-2 lg:mr-6 rounded-lg w-22 h-8 float-right"
+            src={"/assets/macquarie-bank-logo.png"}
+            alt="Income Energy Logo"
+          ></img>
+          <p className=" font-sans mt-10  ">
+            <b>Macquarie Group</b>
+            <br></br>Software Engineer
+            <br></br>July 2022 - Present
+            <br></br>
+            <br></br> Macquarie Group is a large multinational financial service business. They have afew branches but I work at Banking & Financial Services (BFS) division, within the core banking team. We handle the core functionality and maintenance of business banking. I've learnt to be a very flexible engineer here - UNIX, SQL, Cloud, Shell scripting & Programming are all apart of the job.
+            <br></br>
+            <br></br>&#8226; Developed and tested Spring API within a microservice architecture.
+            <br></br>&#8226; Actioned various tasks within Solaris UNIX environments
+            <br></br>&#8226; Write and improve shell/kornshell scripts within batch process.
+            <br></br>&#8226; Maintain & deploy AWS EC2 instances and S3 buckets using Arturo.
+            <br></br>&#8226; Executed queries and data changes using Sybase & Presto SQL databases.
+            <br></br>&#8226; Communicated with business people, engineers and product to achieve common goals.
+          </p>
+          </div>
+
+          <div className='mt-12 block p-6 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700'>
+          <img
             className=" mt-10 ml-2 lg:mr-6 rounded-lg w-20 float-right"
             src={"/assets/prospecta-logo.png"}
             alt="Income Energy Logo"
@@ -84,11 +106,10 @@ function professional() {
           <div className='mt-12 block p-6 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700'>
           <p className=" font-sans font-bold text-2xl mt-10  ">Technical</p>
           <p className=" font-sans mt-4  ">
-            Programming &#10137; Javascript, Typescript, Java, C, HTML, CSS,
-            MySQL, NoSQL.
+            Programming &#10137; Javascript, Typescript, Java, Swift, Python, C, HTML, CSS,
+            MySQL & NoSQL.
             <br></br>
-            Technologies &#10137; Laravel, React, Remix, Django and Flask,
-            Pandas, Threejs.
+            Technologies &#10137; Spring, React, Next, Django & Flask.
           </p>
           <p className=" font-sans font-bold text-2xl mt-6  ">Transferable</p>
           <p className=" font-sans mt-4  ">
@@ -96,7 +117,7 @@ function professional() {
             achieve tasks using creative and proven methods.
             <br></br>&#8226; Excellent <b>communication</b> and{" "}
             <b>interpersonal skills</b> as demonstrated working in small dev
-            teams aswell as product teams.
+            teams aswell as non-technical team members.
             <br></br>&#8226; <b>Autonomous</b> and self-driven work ethic, able
             to absorb information and have a <b>passion for learning</b>.
           </p>

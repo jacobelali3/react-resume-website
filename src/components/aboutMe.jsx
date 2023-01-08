@@ -1,7 +1,7 @@
 import Scene from "./Scene";
 import { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Stars, Center } from "@react-three/drei";
+import { OrbitControls, Stars } from "@react-three/drei";
 import "../index.css";
 import { Helmet } from "react-helmet";
 

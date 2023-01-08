@@ -7,7 +7,7 @@ export default function useDarkMode()
   const colorTheme = theme === 'light' ? 'dark' : 'light'
   useEffect(() => {
     const root = window.document.documentElement;
-    
+
     root.classList.remove(colorTheme);
     root.classList.add(theme);
   }, [theme]);

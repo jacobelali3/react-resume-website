@@ -1,12 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Routes, Route } from "react-router-dom";
 
 
 function MobileNav() {
   return (
     <div>
-      
+
       <nav className="right-0 top-16  fixed z-50 opacity-80 rounded-lg w-auto h-auto  dark:bg-slate-800  bg-black p-6">
         <div className="  text-white "></div>
 
@@ -35,7 +34,7 @@ function MobileNav() {
               Contact Me
             </a>
           </p>
-          
+
         </div>
 
         <div >
@@ -48,10 +47,10 @@ function MobileNav() {
             Contact Me
           </a>
         </div>
-        
+
       </nav>
 
-    
+
     </div>
   );
 }
