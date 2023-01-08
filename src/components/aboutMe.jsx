@@ -25,7 +25,7 @@ function aboutMe() {
           <br></br>I currently work as a Backend Engineer at Macquarie Bank.{" "}
           <img  className="mt-4 h-8 inline dark:bg-opacity-80 dark:bg-white rounded"
             src={'/assets/macquarie-bank-logo.png'}
-            alt="utslogo"
+            alt="macquarie-bank-logo"
             rel="noreferrer"></img>
           <br></br>
           <br></br>I'm learning both frontend and backend in hopes

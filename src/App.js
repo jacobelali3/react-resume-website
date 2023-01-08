@@ -10,6 +10,7 @@ import DarkMode from "./components/darkMode.jsx";
 import { Helmet } from "react-helmet";
 
 function App() {
+  
   return (
     <div className="bg-white dark:bg-black  overflow-hidden w-full h-full text-slate-800 dark:text-white ">
       <Helmet>

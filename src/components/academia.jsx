@@ -36,6 +36,16 @@ function academia() {
             <br></br>
             <b> University: </b>University of Technology Sydney <br></br>{" "}
             <b>WAM:</b> 77
+            <br></br>
+            <br></br>
+            <a
+              href={"/assets/degree.pdf"}
+              className="mt-4  relative w-56 text-xl border text-center rounded  border-black dark:border-white hover:border-2 hover:border-blue-300 hover:text-blue-300 hover:bg-white  px-2 py-2"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View Degree
+            </a>
           </p>
           </div>
 
