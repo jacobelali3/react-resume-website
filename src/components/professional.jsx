@@ -18,7 +18,7 @@ function professional() {
 
           <div className='mt-12 block p-6 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700'>
           <img
-            className=" mt-10 ml-2 lg:mr-6 rounded-lg w-22 h-8 float-right"
+            className=" mt-10 ml-2 lg:mr-6 rounded-lg w-22 h-8 float-right dark:bg-white"
             src={"/assets/macquarie-bank-logo.png"}
             alt="Income Energy Logo"
           ></img>
@@ -40,7 +40,7 @@ function professional() {
 
           <div className='mt-12 block p-6 bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700'>
           <img
-            className=" mt-10 ml-2 lg:mr-6 rounded-lg w-20 float-right"
+            className=" mt-10 ml-2 lg:mr-6 rounded-lg w-20 float-right "
             src={"/assets/prospecta-logo.png"}
             alt="Income Energy Logo"
           ></img>
@@ -93,7 +93,7 @@ function professional() {
             <br></br>
             <br></br> Income Energy was a solar startup hosted by Energy Lab, a
             UTS partner.
-            <br></br>&#8226; Co-developed a billing system in JS, HTML and css.
+            <br></br>&#8226; Co-developed a billing system in JS, HTML and CSS.
             <br></br>&#8226; Programmed dynamic pdf bills for customers.
             <br></br>&#8226; Converted electric API data into useful
             analytics.
